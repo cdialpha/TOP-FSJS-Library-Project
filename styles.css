@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap'); 
+
+* { 
+    box-sizing: border-box;
+}
+body{ 
+    margin: 0;
+}
+#nav-bar{ 
+    background-color: lightcoral;
+    height: 7vh;
+    border-bottom: 5px rgb(0,0,0,0.8);
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-title{ 
+    font-family: Koulen;
+    align-self: center;
+}
+#link-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#nav-element-wrapper{
+    align-self: center;
+    display: flex;
+}
+#nav-element-wrapper >:hover { 
+    transform: scale(1.1);
+}
+.nav-element{
+    display: inline-block;
+    height: 3vh;
+    width: 3vh;
+    border: 3px solid black;
+    border-radius: 25px;
+    margin: 1px 3px 3px 3px;
+}
+
+#link { 
+    font-family: Koulen;
+    font-size: 0.5em;
+    padding-top: 5px;
+    padding-bottom: 1px;
+}
+
+#new-book-popup-screen{
+background-color: rgb(0,0,0,0.7);
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+}
+
+#new-book-popup{    
+    border: 1px solid black;
+    width: 80%;
+    background-color: grey; 
+    position: fixed;
+    top: 30%;
+    left: 10%;
+    border-radius: 10px;
+}
+#new-book-popup > * { 
+    margin-left:20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding:5px;
+}
+
+button { 
+    margin-top: 10px;
+}
